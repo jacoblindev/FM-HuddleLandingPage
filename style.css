@@ -295,3 +295,138 @@ footer {
     text-decoration: none;
     font-weight: 600;
 }
+
+@media screen and (max-width: 800px) {
+    /* Header Section */
+    header {
+        width: 90vw;
+        margin: 2em auto;
+        left: 5vw;
+    }
+
+    header img {
+        width: 35%;
+    }
+
+    header button {
+        width: 35%;
+        height: 30px;
+        border-radius: 15px;
+        font-size: .7rem;
+    }
+
+    /* Hero Section */
+    #hero {
+        height: 100vh;
+        background-image: url(./images/bg-hero-mobile.svg);
+    }
+
+    #hero .container {
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    #hero .container div {
+        width: 90%;
+        text-align: center;
+    }
+
+    #hero h1 {
+        font-size: 1.4em;
+        margin: 6em 0 .8em;
+    }
+
+    #hero button {
+        width: 80%;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    #hero img {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 3em;
+    }
+
+    /* Cards Section */
+    #cards {
+        width: 90%;
+        margin: 3em auto 10em;
+    }
+
+    .card {
+        justify-content: flex-start;
+        padding: 2em;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        width: 100%;
+        font-size: .8rem;
+        line-height: 1.6em;
+    }
+
+    .card img {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .card:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .card:nth-child(2) > div {
+        padding-left: 0;
+    }
+
+    .CTA {
+        width: 100%;
+        left: 0;
+        bottom: -18%;
+    }
+
+    .CTA h2 {
+        font-size: 1em;
+    }
+
+    .CTA button {
+        width: 80%;
+        height: 40px;
+        border-radius: 20px;
+        font-size: .7rem;
+        margin: 2em;
+    }
+
+    /* Contact Section */
+    footer {
+        padding-top: 8rem;
+    }
+
+    #contact {
+        width: 90%;
+    }
+
+    #contact #logo {
+        width: 50%;
+        margin-bottom: 2em;
+    }
+
+    #contact div {
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+    }
+
+    #social {
+        display: flex;
+        justify-content: center;
+    }
+
+    #contact p {
+        text-align: center;
+    }
+}
