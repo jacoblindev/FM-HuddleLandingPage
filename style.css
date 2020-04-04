@@ -23,6 +23,11 @@ font-family: 'Poppins', sans-serif;
 
 h1, h2 {
     font-family: 'Poppins', sans-serif;
+    color: var(--Very-Dark-Cyan);
+}
+
+p {
+    color: var(--Very-Dark-Cyan);
 }
 
 .container {
@@ -55,6 +60,20 @@ header button {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
     font-size: .8rem;
     font-weight: 700;
+}
+
+header button:focus {
+    outline: none;
+}
+
+header button:hover {
+    background-color: var(--Very-Dark-Cyan);
+    color: white;
+    cursor: pointer;
+}
+
+header button:active {
+    box-shadow: none;
 }
 
 /* Hero Section */
@@ -93,13 +112,105 @@ header button {
     margin-top: 2.4em;
 }
 
+#hero button:focus {
+    outline: none;
+}
+
+#hero button:hover {
+    background-color: var(--Very-Pale-Cyan);
+    color: var(--Primary-Pink);
+    border: 3px solid var(--Primary-Pink);
+    cursor: pointer;
+}
+
+#hero button:active {
+    box-shadow: none;
+    opacity: 1;
+}
+
 #hero img {
     width: 52%;
     margin-top: 6em;
 }
 
 /* Cards Section */
+#cards {
+    width: 85%;
+    margin: 9em auto;
+}
 
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .08);
+    padding: 4em 6em;
+    margin-bottom: 2em;
+}
+
+.card p {
+    width: 90%;
+    color: var(--Grayish-Blue);
+    margin-top: 1em;
+}
+
+.card img {
+    width: 40%;
+}
+
+.card:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.card:nth-child(2) > div {
+    padding-left: 4em;
+}
+
+.card:nth-child(2) > div p {
+    width: 100%;
+}
+
+.CTA {
+    width: 70%;
+    margin: 2em auto;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .08);
+    position: relative;
+    top: 5em;
+    padding: 1em;
+}
+
+.CTA h2 {
+    font-size: 1.6em;
+    margin-top: 2em;
+}
+
+.CTA button {
+    width: 50%;
+    height: 80px;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--Primary-Pink);
+    box-shadow: 0 5px 10px 0 hsla(322, 100%, 66%, 0.3);
+    color: white;
+    font-size: 1.1rem;
+    margin: 2em;
+}
+
+.CTA button:focus {
+    outline: none;
+}
+
+.CTA button:hover {
+    cursor: pointer;
+}
+
+.CTA button:active {
+    box-shadow: none;
+    opacity: 1;
+}
 
 /* Footer Section */
 .attribution { 
